@@ -1,0 +1,61 @@
+#header {
+    text-align: center;
+}
+
+#pickerBtn {
+    background-color: black;
+    color: rgb(255,255,255);
+    padding: 10px 45px;
+    font-size: 1.25em;
+    margin-top: 1px;
+    cursor: pointer
+}
+
+#mainImg {
+    object-fit: cover;
+    height: 400px;
+    width: 500px;
+}
+
+
+.content {
+    padding-top: 50px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.waifu-desc a {
+    list-style-position: none;
+    display: inline-block;
+    margin-left: auto;
+}
+
+.desc-container {
+    width: 100%;
+}
+
+
+.selected {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(13, 120px);
+    grid-template-rows: 120px;
+    grid-gap: 30px;
+    list-style: none;
+    align-items: stretch;
+    position: absolute;
+
+}
+
+
+
+.center-piece {
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    position: relative;
+
+}
+
