@@ -13,15 +13,8 @@ $(document).ready(function(){
 
     var waifuImg = $('#mainImg');
     var selectedList = $('.selected');
-
-    console.log(waifuDescriptions);
-
-
-
-
     var randomNumbers = chance.unique(chance.natural, 100, {min: 1, max: 100});
     randomNumbers.splice(randomNumbers.indexOf(13), 1);
-    console.log(randomNumbers);
 
 
     var i = 0;
@@ -30,14 +23,9 @@ $(document).ready(function(){
             alert("That's all the waifus in the game, I've claimed the rest!\nThanks for playing!");
         }
 
-
-
         var imgSrc = 'Images/Waifu' + randomNumbers[i] + '.png';
         $('#description').text(waifuDescriptions[randomNumbers[i] - 1]);
-
-        if(i > 0) {
-            selectedList.append("<li><img src=" + imgSrc + " class='center-piece'></li>" );
-        }
+        selectedList.append("<li><img src=" + imgSrc + " class='center-piece'></li>" );
 
 
         waifuImg.attr('src', imgSrc)
